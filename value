@@ -1,0 +1,16 @@
+import math
+def formula(C,D,H):
+    for i in D:
+        D = int(i)
+        answer = round(math.sqrt((2 * C * D) / H))
+        mylist.append(answer)
+
+
+if __name__ == "__main__":
+    mylist = []
+    C = 50
+    H = 30
+    D = input("Enter numbers:").split(",")
+    formula(C,D,H)
+    myseq = ",".join(map(str, mylist))
+    print(myseq)
